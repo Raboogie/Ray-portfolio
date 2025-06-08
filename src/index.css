@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	/* background-color: #d4c9be; */
+	background-color: #27445d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto', sans-serif;
+}
+
+@theme {
+	--breakpoint-sm: 480px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1024px;
+	--breakpoint-xl: 1280px;
+	--breakpoint-2xl: 1536px;
+}
+
+.bg-boxShadow-cyanMedium {
+	box-shadow: 10px 10px 200px rgba(94, 206, 270, 0.5);
+}
+
+@layer utilities {
+	/* Custom utility classes */
+	.bg-boxShadow-cyanMedium {
+		box-shadow: 10px 10px 200px rgba(94, 206, 270, 0.5);
+	}
+
+	.bg-boxShadow-amberMedium {
+		box-shadow: 10px 10px 200px rgba(200, 173, 50, 0.5);
+	}
+}
+
+@layer utilities {
+	.shadow-gradient-cyanMedium {
+		position: absolute;
+	}
+	.shadow-gradient-cyanMedium::after {
+		content: '';
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		z-index: -1;
+		/* This is the CSS for a radial gradient */
+		background: radial-gradient(
+			circle,
+			rgba(94, 206, 270, 0.5),
+			rgba(94, 200, 200, 0.5)
+		);
+		filter: blur(120px);
+		opacity: 0.5;
+		border-radius: 50%; /* This makes the shadow follow the parent's border-radius */
+	}
+
+	.shadow-gradient-amberMedium {
+		position: absolute;
+	}
+	.shadow-gradient-amberMedium::after {
+		content: '';
+		position: absolute;
+		width: 300px;
+		height: 300px;
+		z-index: -1;
+		/* This is the CSS for a radial gradient */
+		background: radial-gradient(
+			circle,
+			rgba(200, 173, 50, 0.5),
+			rgba(250, 173, 50, 0.5)
+		);
+		filter: blur(120px);
+		opacity: 0.5;
+		border-radius: 50%; /* This makes the shadow follow the parent's border-radius */
+	}
+}
