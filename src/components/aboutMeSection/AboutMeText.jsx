@@ -8,10 +8,10 @@ const AboutMeText = () => {
 				My technical expertise includes proficiency in React, front-end
 				development and Responsive Design. I have some experience with
 				back-end technologies such as Java, Spring Boot, Node.js, and
-				various databases including MySQL, Oracle DB, and MongoDB. I
-				have a proven track record of taking complete ownership of
-				requirements and assignments, ensuring timely and high-quality
-				delivery within an Agile environment. Outside of coding, I enjoy
+				various databases including Oracle DB and MongoDB. I have a
+				proven track record of taking complete ownership of requirements
+				and assignments, ensuring timely and high-quality delivery
+				within an Agile environment. Outside of coding, I enjoy
 				exploring new technologies, reading books, sports and fishing
 				with family.
 			</p>
