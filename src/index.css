@@ -25,22 +25,14 @@ h6 {
 	--breakpoint-2xl: 1536px;
 }
 
-.bg-boxShadow-cyanMedium {
-	box-shadow: 10px 10px 200px rgba(94, 206, 270, 0.5);
-}
-
 @layer utilities {
-	/* Custom utility classes */
-	.bg-boxShadow-cyanMedium {
-		box-shadow: 10px 10px 200px rgba(94, 206, 270, 0.5);
+	/* Custom Background colors*/
+	.bg-turquoise-dark {
+		background-color: #405D72;
 	}
-
-	.bg-boxShadow-amberMedium {
-		box-shadow: 10px 10px 200px rgba(200, 173, 50, 0.5);
+	.bg-turquoise-light {
+		background-color: #758694;
 	}
-}
-
-@layer utilities {
 	.shadow-gradient-cyanMedium {
 		position: absolute;
 	}
