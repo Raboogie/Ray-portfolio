@@ -1,7 +1,7 @@
 import ProjectsText from './ProjectsText';
 import SingleProject from './SingleProject';
-import "../../../public/images/Antique-Carpet-website.png"
-import "../../../public/images/book-a-session-project.png"
+import bookSessionProImage from '../../images/book-a-session-project.png';
+import antiqueCarpetProImage from '../../images/Antique-Carpet-website.png';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants.js";
 const projects = [
@@ -9,15 +9,15 @@ const projects = [
 		name: 'Course Booking Session',
 		year: 'Nov2024',
 		align: 'right',
-		image: '../../../public/images/book-a-session-project.png',
-		link: '#',
+		image: bookSessionProImage,
+		link: 'https://github.com/Raboogie/book-a-session-app',
 	},
 	{
 		name: 'Carpet Management System',
 		year: 'Jan2025',
 		align: 'left',
-		image: '../../../public/images/Antique-Carpet-website.png',
-		link: '#',
+		image: antiqueCarpetProImage,
+		link: 'https://github.com/Raboogie/antique-carpet-management-app',
 	},
 ];
 

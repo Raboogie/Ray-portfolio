@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants.js";
+import circBoardImage from '../../images/CircuitBoard.png';
 
 const HeroPic = () => {
 	return (
@@ -11,7 +12,7 @@ const HeroPic = () => {
 			viewport={{once: false, amount: 0}}
 			className="h-full flex items-center justify-center">
 			<img
-				src="../../../public/images/CircuitBoard.png"
+				src={circBoardImage}
 				alt="Circuit Board Background"
 				className="max-h-[450px] w-auto"
 			/>
