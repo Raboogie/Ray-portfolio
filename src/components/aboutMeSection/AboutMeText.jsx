@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const AboutMeText = () => {
 	return (
@@ -15,9 +16,17 @@ const AboutMeText = () => {
 				exploring new technologies, reading books, sports and fishing
 				with family.
 			</p>
-			<button className="border border-yellow-400 rounded-full py-2 px-4 text-lg flex items-center mt-10 hover:bg-yellow-400 translation-all duration-500 cursor-pointer md:self-start sm:self-center hover:text-cyan-400">
-				My Projects
-			</button>
+			<Link
+				spy={true}
+				smooth={true}
+				duration={500}
+				offset={-130}
+				to={'projects'}
+			>
+				<button className="border border-yellow-400 rounded-full py-2 px-4 text-lg flex items-center mt-10 hover:bg-yellow-400 translation-all duration-500 cursor-pointer md:self-start sm:self-center hover:text-cyan-400">
+					My Projects
+				</button>
+			</Link>
 		</div>
 	);
 };
