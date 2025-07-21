@@ -22,9 +22,9 @@ const FooterMain = () => {
     return (
         <div className="px-4">
             <div className="w-full h-[1px] bg-gray-400 mt-24"></div>
-            <div className="md:flex justify-between mt-4 max-w-[1200px] mx-auto sm:hidden">
+            <div className="md:flex justify-between mt-4 max-w-[1200px] mx-auto xs:hidden sm:hidden">
                 <p className="text-3xl text-gray-400 ">Raynaldo Francis</p>
-                <ul className="flex gap-4 text-gray-400 text-xl">
+                <ul className="flex gap-1 text-gray-400 text-xl">
                     {footerLinks.map((item) => {
                         return (
                             <li key={item.name}>

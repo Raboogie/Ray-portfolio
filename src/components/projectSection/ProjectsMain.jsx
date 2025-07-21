@@ -7,14 +7,14 @@ import { fadeIn } from "../../framerMotion/variants.js";
 const projects = [
 	{
 		name: 'Course Booking Session',
-		year: 'Nov2024',
+		year: '',
 		align: 'right',
 		image: bookSessionProImage,
 		link: 'https://github.com/Raboogie/book-a-session-app',
 	},
 	{
 		name: 'Carpet Management System',
-		year: 'Jan2025',
+		year: '',
 		align: 'left',
 		image: antiqueCarpetProImage,
 		link: 'https://github.com/Raboogie/antique-carpet-management-app',

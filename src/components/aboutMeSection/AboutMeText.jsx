@@ -3,9 +3,9 @@ import { Link } from 'react-scroll';
 
 const AboutMeText = () => {
 	return (
-		<div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-center mr-10">
-			<h1 className="text-6xl text-cyan-400 mb-10">About Me</h1>
-			<p className="text-white">
+		<div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-center xs:items-center xs:text-center">
+			<h1 className="text-6xl text-cyan-400 mb-10 px-4">About Me</h1>
+			<p className="text-white px-4">
 				My technical expertise includes proficiency in React, front-end
 				development and Responsive Design. I have some experience with
 				back-end technologies such as Java, Spring Boot, Node.js, and
@@ -17,6 +17,7 @@ const AboutMeText = () => {
 				with family.
 			</p>
 			<Link
+				className="px-4 xs:self-center md:self-start sm:self-center"
 				spy={true}
 				smooth={true}
 				duration={500}

@@ -9,7 +9,7 @@ const AllExperiences = () => {
 	const displayArrows = experiences.length - 1;
 
 	return (
-		<div className="flex md:flex-row sm:flex-col justify-between items-center">
+		<div className="flex md:flex-row xs:flex-col sm:flex-col justify-between items-center">
 			{experiences.map((item, index) => {
 				return (
 					<React.Fragment key={item.id}>
@@ -24,7 +24,7 @@ const AllExperiences = () => {
 								whileInView={'show'}
 								viewport={{ once: false, amount: 0 }}
 							>
-								<FaArrowRight className="text-6xl text-amber-400 lg:block sm:hidden" />
+								<FaArrowRight className="text-6xl text-amber-400 lg:block sm:hidden xs:hidden" />
 							</motion.div>
 						) : (
 							''

@@ -15,13 +15,20 @@ const NavbarMain = () => {
 			<div className="flex justify-between w-full max-w-[1200px] mx-auto bg-black items-center p-6 rounded-r-full rounded-l-full border-[.5px] border-yellow-500">
 				<NavbarLogo />
 				<div
-					className={`${isOpen ? 'sm:block' : 'sm:hidden'} lg:block`}
+					className={`${isOpen ? 'xs:block sm:block' : 'xs:hidden sm:hidden'} lg:block`}
 				>
 					<NavbarLinks />
 				</div>
 				<NavbarBtn />
+				{/*TODO refactor button to a component to use in multiple places*/}
+				<button
+					className="text-2xl sm:hidden p-3 border border-yellow-500 rounded-full text-white"
+					onClick={toggleMenu}
+				>
+					<GiHamburgerMenu />
+				</button>
 			</div>
-			<div className="flex lg:hidden sm:block p-6 bg-black items-center justify-center rounded-full border-[1.5px] border-yellow-500">
+			<div className="flex lg:hidden xs:hidden sm:block p-6 bg-black items-center justify-center rounded-full border-[1.5px] border-yellow-500">
 				<button
 					className="text-2xl p-3 border border-yellow-500 rounded-full text-white"
 					onClick={toggleMenu}

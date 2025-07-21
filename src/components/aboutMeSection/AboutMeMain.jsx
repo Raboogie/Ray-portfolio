@@ -6,20 +6,20 @@ import { fadeIn } from "../../framerMotion/variants.js";
 
 const AboutMeMain = () => {
 	return (
-		<div id="about" className="flex md:flex-row sm:flex-col max-w-[1200px] mx-auto mt-[100px] justify-between items-center">
+		<div id="about" className="flex md:flex-row xs:flex-col sm:flex-col max-w-[1200px] mx-auto mt-[100px] justify-between items-center">
 			<motion.div
 				variants={fadeIn('right', 0.2)}
 				initial={"hidden"}
 				whileInView={"show"}
-				viewport={{once: false, amount: 0.8}}
+				viewport={{once: false, amount: 0.4}}
 			>
 				<AboutMeText />
 			</motion.div>
 			<motion.div
-				variants={fadeIn('left', 0.2)}
+				variants={fadeIn('up', 0.2)}
 				initial={"hidden"}
 				whileInView={"show"}
-				viewport={{once: false, amount: 0.8}}
+				viewport={{once: false, amount: 0.4}}
 			>
 				<AboutMeImage />
 			</motion.div>

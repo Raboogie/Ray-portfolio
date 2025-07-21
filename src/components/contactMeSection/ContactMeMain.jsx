@@ -17,7 +17,7 @@ const ContactMeMain = () => {
 			<h2 className="text-6xl text-cyan-400 mb-10 text-center">
 				Contact Me
 			</h2>
-			<div className="flex justify-between gap-24 bg-gray-700 p-8 rounded-2xl lg:flex-row sm:flex-col">
+			<div className="flex justify-between gap-24 bg-gray-700 p-8 rounded-2xl lg:flex-row  xs:flex-col">
 				<ContactMeLeft />
 				<ContactMeRight />
 			</div>
