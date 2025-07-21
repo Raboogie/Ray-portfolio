@@ -13,7 +13,7 @@ const AboutMeText = () => {
 				proven track record of taking complete ownership of requirements
 				and assignments, ensuring timely and high-quality delivery
 				within an Agile environment. Outside of coding, I enjoy
-				exploring new technologies, reading books, sports and fishing
+				exploring new technologies, reading, sports and fishing
 				with family.
 			</p>
 			<Link
