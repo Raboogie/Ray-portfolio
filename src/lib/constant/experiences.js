@@ -2,8 +2,8 @@ export const experiences = [
 	{
 		company: 'JP Morgan Chase',
 		position: 'Software Engineer II',
-		startDate: '2022-07-18',
-		endDate: '2022-12-31',
+		startDate: '07-18-2022',
+		endDate: 'Present',
 		description:
 			'Developed web applications with multiple teams Front-end, Back-end, business middleware to enhance user experiences across all of chase web and mobile applications',
 		responsibilities: ['Typescript', 'React', 'Node.js'],

@@ -17,7 +17,7 @@ const NavbarMain = () => {
 				<div
 					className={`${isOpen ? 'xs:block sm:block' : 'xs:hidden sm:hidden'} lg:block`}
 				>
-					<NavbarLinks />
+					<NavbarLinks setIsOpen={setIsOpen} isOpen={isOpen} />
 				</div>
 				<NavbarBtn />
 				{/*TODO refactor button to a component to use in multiple places*/}
